@@ -1,0 +1,55 @@
+1-interface class degildir. interface interfacedir.
+
+2-interface yapilarda concrete method yapilamaz sadece abstract method yapilabilir.
+
+3-interface bir class olmadigi icin dolayisiyla constructor ve obje yoktur.
+
+4-java multiple inheritance i desteklemez ama interface parentlar multiple implementi destekler
+
+5-birden fazla parent classlarda ayni isimli methodlarin olmasi durumunda,
+  child class ayni isimli farkli bodyli methodlar arasinda secim yapamaz. Fakat interfacelerde
+  methodlarin bodyleri olmadigindan ayni isimli methodlar birbiriyle tamamen ayni oldugu icin
+  secim soz konusu olmaz.
+  
+6-interface yapilarda tum methodlar abstract olmak zorunda oldugundan method signature a
+  abstract keywordu yazilmayabilir
+  
+7-classlarda access modifier yazilmazsa default olur ama interfacelerde public olur
+
+  interfacelerdeki tum memeberlar public oldugu icin access modifier yazilmasa da olur.
+  public void ayna(); <------>  void ayna();  ayni seydir
+ 
+8-interface'ler kendi arasinda parent child (extends) iliskisi kurabilir. 
+
+  class --> class : extends
+  interface---> interface : extends 
+  class---> interface : implements 
+  interface ---> class : olamaz
+  
+9-interfacelerde variablelar mutlaka final dir
+  a)Final veriable’ler italik bold’dur ve buyuk harf ile yazilmali
+  b)Final veriable’ler initialize edilmezse CTE verir. 
+  
+10-interfacelerde variablelar mutlaka static dir. dolayisiyla obje olusturmadan
+   interface ismi ile ulasilabilir
+   
+11- ayni isme sahip variablelar kesinlikle interface isimleri kullanilarak
+     call edilmelidir. object kullanilarak call edilirse CTE verir.
+     
+12- interfacelerde tum variableler publis dir. dolayisiyla tum interface
+    variableler public,static ve final dir.
+    
+13- interface yapilarda istenirse abstract olmayan method olusturulabilir
+  a-accmod!den sonra "default" veya "static" keyword kullanilmali
+  b-interface yapilarda concrete method icin kullanilan "default" keywordu accmod turunu vermez
+  c-interface yapilarda concrete method cild class tarafindan ovirride edilmek zorunda degildir
+  d-interface yapilarda "default" olarak creat edilen concrete method child classa
+    ancak obj ile call edilir
+  e-interface yapilarda "static" olarak create edilen concrete method child class a
+    ancak datatype(interface) ile call edilir           
+  
+  
+  
+  
+  
+  

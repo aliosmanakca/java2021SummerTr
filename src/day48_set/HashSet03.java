@@ -6,6 +6,7 @@ import java.util.TreeSet;
 
 public class HashSet03 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		/*
         Soru: Elemanlari Alfabetik sirada dizen ve tekrarsiz bir collection elde etmek isterseniz ne kullanirsiniz

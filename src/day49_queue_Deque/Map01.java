@@ -29,10 +29,18 @@ public class Map01 {
 		System.out.println(m1.getOrDefault(102, "boyle bir eleman yok"));
 		System.out.println(m1.getOrDefault(110, "boyle bir eleman yok"));//eger bu numara yoksa default olarak atadigimiz yazi cikar
 		
-		System.out.println(m1.putIfAbsent(120, "canan"));
+		System.out.println(m1.putIfAbsent(120, "canan")); // null
 		
 		m1.putIfAbsent(111, "omer");
-		System.out.println(m1.get(111));
+		System.out.println(m1.get(111)); //omer
+		
+		m1.putIfAbsent(102, "zeki");
+		System.out.println(m1.get(102)); // 102 i dolu oldugu icin yeni degeri atamadi
+		
+		m1.putIfAbsent(105, "kerem");
+		System.out.println(m1.get(105));// 105 in eski value su null oldugu icin guncellendi
+		
+		System.out.println(m1);
 		
 
 		

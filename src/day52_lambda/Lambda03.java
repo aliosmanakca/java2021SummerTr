@@ -25,7 +25,7 @@ public class Lambda03 {
 	public static int rakamlarToplami(int x) {
 		int toplam = 0;
 		while (x!=0) {
-			toplam=toplam+x%10;
+			toplam+=x%10; 
 			x=x/10;
 		}
 		return toplam; 
